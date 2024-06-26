@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='Easy NLP Augmentation',
-    version='1.0',
+    name='easy_nlp_augmentation',
+    version='1.1',
     packages=find_packages(),
     install_requires=[
         'numpy',
