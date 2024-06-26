@@ -1,0 +1,6 @@
+integration_tests:
+  privileged: true
+  build: integration
+  volumes:
+    - "..:/src:ro"
+    - "/var/run/docker.sock:/var/run/docker.sock"
