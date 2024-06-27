@@ -20,11 +20,11 @@ import pandas as pd
 from easy_text_augmenter import augment_random_word
 
 df = pd.DataFrame({
-    'processed_text': ['This is a test', 'Another test data ', 'Of course we need more data', 'Newton does not like apple', 'Hello world I am a human'],
+    'text': ['This is a test', 'Another test data ', 'Of course we need more data', 'Newton does not like apple', 'Hello world I am a human'],
     'label': ['A', 'A', 'B', 'B', 'A']
 })
 classes_to_augment = ['A', 'B']
-augmented_df = augment_random_word(df, classes_to_augment, augmentation_percentage=0.8, text_column='processed_text')
+augmented_df = augment_random_word(df, classes_to_augment, augmentation_percentage=0.8, text_column='text')
 print(augmented_df)
 ```
 **Result :**
@@ -45,6 +45,7 @@ print(augmented_df)
 ```python
 from easy_text_augmenter import augment_random_word
 
+classes_to_augment = ['A', 'B']
 augmented_df = augment_random_character(df, classes_to_augment, augmentation_percentage=0.8, text_column='text')
 print(augmented_df)
 ```
@@ -67,7 +68,8 @@ print(augmented_df)
 ```python
 from easy_text_augmenter import augment_word_bert
 
-augmented_df = augment_word_bert(df, classes_to_augment, augmentation_percentage=0.5, text_column='processed_text', model_path='bert-base-uncased', random_state=70)
+classes_to_augment = ['A', 'B']
+augmented_df = augment_word_bert(df, classes_to_augment, augmentation_percentage=0.8, text_column='text', model_path='bert-base-uncased', random_state=70)
 print(augmented_df)
 ```
 **Result :**
