@@ -112,7 +112,7 @@ augment_random_word(df, classes_to_augment, augmentation_percentage, text_column
 - `classes_to_augment` (list): A list of class labels that need to be augmented.
 - `augmentation_percentage` (float): The percentage of samples to augment from each specified class.
 - `text_column` (str): The name of the column in the DataFrame that contains the text data.
-- `random_state` (int, optional): A random seed for reproducibility. Default is 42.
+- `random_state` (int, optional): A random seed used for specify which rows to augment. Default is 42.
 - `weights` (list, optional): A list of weights to determine the probability of selecting each augmentation type. Default is [0.5, 0.3, 0.2] for swap, delete, and split, respectively.
 
 `weights` techniques :
@@ -143,7 +143,7 @@ augment_random_character(df, classes_to_augment, augmentation_percentage, text_c
 - `classes_to_augment` (list): A list of class labels indicating which classes should be augmented.
 - `augmentation_percentage` (float): The percentage of samples in each class that should be augmented.
 - `text_column` (str): The column name in the DataFrame that contains the text data to be augmented.
-- `random_state` (int, optional): The seed used by the random number generator for reproducibility. Default is 42.
+- `random_state` (int, optional): A random seed used for specify which rows to augment. Default is 42.
 - `weights` (list, optional): A list of weights for each augmentation technique, used to determine the probability of choosing each technique. Default is [0.2, 0.2, 0.2, 0.2, 0.2].
 
 `weights` techniques :
@@ -176,7 +176,7 @@ def augment_word_bert(df, classes_to_augment, augmentation_percentage, text_colu
 - `augmentation_percentage` (float): The percentage of samples within each class to augment (e.g., 0.2 for 20%).
 - `text_column` (str): The name of the column in the DataFrame that contains the text to be augmented.
 - `model_path` (str): The path to the pre-trained BERT model used for augmentation.
-- `random_state` (int, optional): The random seed used for sampling (default is 42).
+- `random_state` (int, optional): A random seed used for specify which rows to augment. Default is 42.
 - `weights` (list, optional): The weights for choosing between the insertion and substitution augmentation techniques (default is [0.7, 0.3]).
 
 **Returns:**
