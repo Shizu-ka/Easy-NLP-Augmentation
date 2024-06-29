@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='easy_nlp_augmentation',
-    version='1.1',
+    version='1.4',
     packages=find_packages(),
     install_requires=[
         'numpy',
@@ -17,7 +17,7 @@ setup(
     },
     author='Shizuka',
     author_email='shizuka0@proton.me',
-    description='A package for augmenting text data using NLP techniques',
+    description='A package for augmenting text data using NLP techniques directly in your pandas dataframe.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/Shizu-ka/easy-nlp-augmentation',

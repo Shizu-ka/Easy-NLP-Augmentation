@@ -10,6 +10,8 @@ There are only 3 techniques for now :
 
 ```bash
 !pip install easy-nlp-augmentation
+import easy_text_augmenter
+easy_text_augmenter.info()
 ```
 
 
@@ -75,7 +77,7 @@ print(augmented_df)
 **Result :**
 
 ```
-                                processed_text label
+                                          text label
 0                               This is a test     A
 1                           Another test data      A
 2                  Of course we need more data     B
