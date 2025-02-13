@@ -45,7 +45,7 @@ print(augmented_df)
 
 ### augment_random_character
 ```python
-from easy_text_augmenter import augment_random_word
+from easy_text_augmenter import augment_random_character
 
 classes_to_augment = ['A', 'B']
 augmented_df = augment_random_character(df, classes_to_augment, augmentation_percentage=0.8, text_column='text')
