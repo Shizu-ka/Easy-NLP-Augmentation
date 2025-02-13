@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='easy_nlp_augmentation',
-    version='1.4',
+    version='1.5',
     packages=find_packages(),
     install_requires=[
         'numpy',
